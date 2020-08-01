@@ -20,7 +20,6 @@
   color: #ec823a;
 }
 .nav-link {
-  font-family: ;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -38,6 +37,9 @@
 }
 .main-section p {
   font-size: 1.1rem;
+}
+.main-section h2 {
+  text-align: center;
 }
 
 /* footer */
