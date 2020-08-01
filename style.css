@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar elements styling */
+#navbar {
+  background-color: #343434;
+  padding: 20px 0 10px;
+  position: sticky;
+  top: 0;
+}
+#navbar h1 {
+  color: #fff;
+  font-family: monospace;
+  margin: 0 35%;
+  font-size: 2rem;
+}
+.header-name {
+  color: #ec823a;
+}
+.nav-link {
+  font-family: ;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  font-size: 0.8rem;
+}
+
+.nav-link:hover {
+  color: #ec823a;
+}
+
+/* main section */
+.main-section {
+  padding: 0 30px;
+}
+.main-section p {
+  font-size: 1.1rem;
+}
+
+/* footer */
+footer {
+  background-color: #343434;
+  position: fixed;
+  bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+.fab {
+  color: skyblue;
+  padding: 0 10px;
+}
+/* colours used- 3c4245 for navbar, e5edc4 for main section */
