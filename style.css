@@ -93,6 +93,9 @@ footer {
   color: skyblue;
   padding: 0 10px;
 }
+.fab:hover {
+  color: rgb(210, 234, 243);
+}
 .line {
   width: 30%;
   margin: 0 auto;
@@ -128,7 +131,7 @@ footer {
     margin-top: 10px;
   }
   .navlink {
-    text-align: center;
+    visibility: hidden;
   }
   .ulheading,
   h4,
