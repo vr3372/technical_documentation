@@ -22,151 +22,225 @@
       <header>
         <h1>Data types in <span class="header-name">JavaScript</span></h1>
       </header>
-      <a href="" class="nav-link">Home</a>
-      <a href="" class="nav-link">String</a>
-      <a href="" class="nav-link">Numbers</a>
-      <a href="" class="nav-link">Boolean</a>
-      <a href="" class="nav-link">Undefined</a>
-      <a href="" class="nav-link">Null</a>
+      <a href="#navbar" class="nav-link">Home</a>
+      <a href="#string" class="nav-link">String</a>
+      <a href="#numbers" class="nav-link">Numbers</a>
+      <a href="#boolean" class="nav-link">Boolean</a>
+      <a href="#undefined" class="nav-link">Undefined</a>
+      <a href="#null" class="nav-link">Null</a>
     </nav>
     <main id="main-doc">
       <section class="main-section">
         <h2>A brief intro on JavaScript</h2>
-        <p>JavaScript was initially created to “make web pages alive”.</p>
+
+        <p>JavaScript was initially created to “make web pages come alive”.</p>
         <p>
-          It was introduced in 1995 as a way to add programs to web pages in the
-          Netscape Navigator browser. The language has since been adopted by all
-          other major graphical web browsers. It has made modern web
-          applications possible—applications with which you can interact
-          directly without doing a page reload for every action.
+          It was developed by <strong>Brenden Eich</strong> in 1995. He was a
+          Netscape Communications Corporation programmer & it took only 10 days
+          to create it & was named
+          <em>Mocha.</em>
+          The name got changed to <em>Livescript</em> and finally to
+          <em>JavaScript</em>
+          as we know today.
         </p>
         <p>
-          Here we will be discussing about the data types used in javascript.
+          The popularity of JavaScript grew & in the year 1996 it was handed
+          over to the international standards scripting language body called
+          <strong>ECMA (European Computer Manufacturers Association)</strong>,
+          which is responsible for the development and upkeep of the language to
+          this day.
         </p>
-        <ul>
-          <li>
-            String. A sequence of characters that represent a text value. For
-            example: "Howdy"
-          </li>
-          <li>
-            Number. An integer or floating point number. For example: 42 or
-            3.14159.
-          </li>
-          <li>Boolean. true and false.</li>
-          <li>undefined. A top-level property whose value is not defined.</li>
-          <li>A special keyword denoting a null value</li>
-        </ul>
+        <p>
+          JavaScript was used to add programs to web pages in the browser. The
+          language was adopted by all other major web browsers. Since then it
+          has made modern web applications possible—applications with which you
+          can interact directly without doing a page reload for every action.
+        </p>
+        <h3 class="ulheading">
+          Here we will be discussing about the data types used in javascript-
+        </h3>
+        <div>
+          <h4>Primitive data types</h4>
+          <ul class="list">
+            <li>
+              <em>String</em> - A sequence of characters that represent a text
+              value within quotes. For e.g: "Hello!".
+            </li>
+            <li>
+              <em>Number</em> - An integer or floating point number. For e.g: 42
+              or 3.14159.
+            </li>
+            <li><em>Boolean</em> - true and false.</li>
+            <li>
+              <em>undefined</em> - If a variable is only declared & no value is
+              assigned then it will show as undefined.
+            </li>
+            <li>
+              <em>Null</em> - A special keyword denoting a null value, here we
+              assign as null or no value.
+            </li>
+          </ul>
+          <h4>Advanced data types</h4>
+          <ul class="list">
+            <li>
+              <em>Objects</em> - Objects are used to store collections of data
+              and more complex entities.
+            </li>
+            <li>
+              <em>Symbols</em> - The symbol type is used to create unique
+              identifiers for objects.
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="string">
         <header>
           <h2>String</h2>
+
         </header>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas
-          orci sodales augue rhoncus mollis. Sed eu nisi id leo scelerisque
-          venenatis et vitae justo. Donec vel imperdiet libero. Vestibulum
-          sollicitudin elit quam, at auctor justo sodales vitae. Suspendisse
-          vehicula semper ex, at ultricies ipsum pulvinar eget. Suspendisse
-          potenti. Aenean vel euismod neque. Mauris lectus neque, ultricies in
-          erat vitae, semper congue neque. Donec ullamcorper, sem in congue
-          egestas, ex dolor consequat felis, et pharetra elit magna ac orci. In
-          in purus ac justo tempor fringilla consectetur ac neque. Etiam eget
-          consequat tellus. Mauris a orci ut urna sagittis porttitor. Sed
-          sollicitudin, libero sed consectetur pellentesque, lacus odio tempor
-          ex, eget varius neque velit ut odio. Duis velit eros, lacinia porta
-          dapibus et, gravida ut orci. Maecenas eleifend maximus quam, at
-          faucibus lorem convallis ac. Praesent auctor ipsum mollis diam
-          eleifend, at porttitor leo aliquet.
+          A <strong>String</strong> in JavaScript must be surrounded by quotes.
         </p>
+        <p>
+          let str = "Hello";
+        </p>
+        <p>
+          let str2 = 'Single quotes are ok too';
+        </p>
+        <p>
+          let phrase = `can embed another ${str}`;
+        </p>
+        </p>
+        <p>In JavaScript, there are 3 types of quotes.
+          </p>
+          <code>
+            Double quotes: "Hello".<br>
+            Single quotes: 'Hello'.<br>
+            Backticks: `Hello`.
+          </code>
+          <p>
+            <strong>Double</strong> and <strong>single</strong> quotes are “simple” quotes. There’s practically no difference between them in JavaScript.
+          </p>
+            <p>
+              <strong>Backticks</strong> are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}, for example:
+            </p>
+            <code>
+              alert( `Hello, ${name}!` ); //the result is: Hello, John!
+            </code>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="numbers">
         <header>
           <h2>Numbers</h2>
+
         </header>
+       
+        <p>In modern JavaScript, there are two types of numbers:<em>Regular & BigInt.</em></p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas
-          orci sodales augue rhoncus mollis. Sed eu nisi id leo scelerisque
-          venenatis et vitae justo. Donec vel imperdiet libero. Vestibulum
-          sollicitudin elit quam, at auctor justo sodales vitae. Suspendisse
-          vehicula semper ex, at ultricies ipsum pulvinar eget. Suspendisse
-          potenti. Aenean vel euismod neque. Mauris lectus neque, ultricies in
-          erat vitae, semper congue neque. Donec ullamcorper, sem in congue
-          egestas, ex dolor consequat felis, et pharetra elit magna ac orci. In
-          in purus ac justo tempor fringilla consectetur ac neque. Etiam eget
-          consequat tellus. Mauris a orci ut urna sagittis porttitor. Sed
-          sollicitudin, libero sed consectetur pellentesque, lacus odio tempor
-          ex, eget varius neque velit ut odio. Duis velit eros, lacinia porta
-          dapibus et, gravida ut orci. Maecenas eleifend maximus quam, at
-          faucibus lorem convallis ac. Praesent auctor ipsum mollis diam
-          eleifend, at porttitor leo aliquet.
+          The number type represents both integer and floating point numbers.
         </p>
+        <p>
+          <strong>Regular numbers</strong> in JavaScript are stored in 64-bit format IEEE-754, also known as “double precision floating point numbers”. These are numbers that we’re using most of the time, and we’ll talk about them in this chapter.
+        </p>
+        <p>for e.g:</p>
+        <code>
+          let n = 123;
+          n = 12.345;
+        </code>
+        <p>There are many operations for numbers, e.g. multiplication *, division /, addition +, subtraction -, and so on.</p>
+        <p><strong>BigInt numbers</strong>, to represent integers of arbitrary length. They are sometimes needed, because a regular number can’t exceed 253 or be less than -253. As bigints are used in few special areas, we devote them a special chapter BigInt.</p>
+        <p>BigInt type was recently added to the language to represent integers of arbitrary length.
+          </p>
+          <p>A BigInt value is created by appending n to the end of an integer:</p>
+          <code>
+            // the "n" at the end means it's a BigInt
+const bigInt = 1234567890123456789012345678901234567890n;
+          </code>
+
       </section>
-      <section class="main-section">
+      <section class="main-section" id="boolean">
         <header>
           <h2>Boolean</h2>
+
         </header>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas
-          orci sodales augue rhoncus mollis. Sed eu nisi id leo scelerisque
-          venenatis et vitae justo. Donec vel imperdiet libero. Vestibulum
-          sollicitudin elit quam, at auctor justo sodales vitae. Suspendisse
-          vehicula semper ex, at ultricies ipsum pulvinar eget. Suspendisse
-          potenti. Aenean vel euismod neque. Mauris lectus neque, ultricies in
-          erat vitae, semper congue neque. Donec ullamcorper, sem in congue
-          egestas, ex dolor consequat felis, et pharetra elit magna ac orci. In
-          in purus ac justo tempor fringilla consectetur ac neque. Etiam eget
-          consequat tellus. Mauris a orci ut urna sagittis porttitor. Sed
-          sollicitudin, libero sed consectetur pellentesque, lacus odio tempor
-          ex, eget varius neque velit ut odio. Duis velit eros, lacinia porta
-          dapibus et, gravida ut orci. Maecenas eleifend maximus quam, at
-          faucibus lorem convallis ac. Praesent auctor ipsum mollis diam
-          eleifend, at porttitor leo aliquet.
+          The boolean type has only two values: <strong>true</strong> and <strong>false</strong>
         </p>
+        <p>This type is commonly used to store yes/no values: true means “yes, correct”, and false means “no, incorrect”.</p>
+        <p>For instance:</p>
+        <code>let nameFieldChecked = true; // yes, name field is checked<br>
+          let ageFieldChecked = false; // no, age field is not checked</code><br>
+          <p>Boolean values also come as a result of comparisons:</p>
+          <code>
+            let isGreater = 4 > 1;
+
+            alert( isGreater ); // true (the comparison result is "yes")
+          </code><br>
+          <p>In JavaScript, the operator is a little bit trickier and more powerful. But first, let’s see what happens with boolean values.</p>
+          <p>There are four possible logical combinations:</p>
+          <code>alert( true || true );   // true<br>
+            alert( false || true );  // true<br>
+            alert( true || false );  // true<br>
+            alert( false || false ); // false</code>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="undefined">
         <header>
           <h2>Undefined</h2>
+
         </header>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas
-          orci sodales augue rhoncus mollis. Sed eu nisi id leo scelerisque
-          venenatis et vitae justo. Donec vel imperdiet libero. Vestibulum
-          sollicitudin elit quam, at auctor justo sodales vitae. Suspendisse
-          vehicula semper ex, at ultricies ipsum pulvinar eget. Suspendisse
-          potenti. Aenean vel euismod neque. Mauris lectus neque, ultricies in
-          erat vitae, semper congue neque. Donec ullamcorper, sem in congue
-          egestas, ex dolor consequat felis, et pharetra elit magna ac orci. In
-          in purus ac justo tempor fringilla consectetur ac neque. Etiam eget
-          consequat tellus. Mauris a orci ut urna sagittis porttitor. Sed
-          sollicitudin, libero sed consectetur pellentesque, lacus odio tempor
-          ex, eget varius neque velit ut odio. Duis velit eros, lacinia porta
-          dapibus et, gravida ut orci. Maecenas eleifend maximus quam, at
-          faucibus lorem convallis ac. Praesent auctor ipsum mollis diam
-          eleifend, at porttitor leo aliquet.
+          The meaning of <strong>Undefined</strong> is “value is not assigned”.
         </p>
+        <p>If a variable is declared, but not assigned, then its value is undefined:</p>
+        <code>let age;
+
+          alert(age); // shows "undefined"</code>
+          <p>Technically, it is possible to explicitly assign undefined to a variable:</p>
+          <code>let age = 100;
+
+            // change the value to undefined
+            age = undefined;
+            
+            alert(age); // "undefined"</code><br>
+            <p>undefined means “no value.” Uninitialized variables are undefined:</p>
+            <code>> var foo;
+              > foo
+              undefined</code><br>
+              <p>Missing parameters are undefined:</p>
+              <code>> function f(x) { return x }
+                > f()
+                undefined</code><br>
+                <p>If you read a nonexistent property, you get undefined:</p>
+                <code>> var obj = {}; // empty object
+                  > obj.foo
+                  undefined</code>
+            <p>…But we don’t recommend doing that. Normally, one uses null to assign an “empty” or “unknown” value to a variable, while undefined is reserved as a default initial value for unassigned things.</p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="null">
         <header>
           <h2>Null</h2>
+
         </header>
+        <p><strong>Null</strong> means “no object.” It is used as a nonvalue whenever an object is expected</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas
-          orci sodales augue rhoncus mollis. Sed eu nisi id leo scelerisque
-          venenatis et vitae justo. Donec vel imperdiet libero. Vestibulum
-          sollicitudin elit quam, at auctor justo sodales vitae. Suspendisse
-          vehicula semper ex, at ultricies ipsum pulvinar eget. Suspendisse
-          potenti. Aenean vel euismod neque. Mauris lectus neque, ultricies in
-          erat vitae, semper congue neque. Donec ullamcorper, sem in congue
-          egestas, ex dolor consequat felis, et pharetra elit magna ac orci. In
-          in purus ac justo tempor fringilla consectetur ac neque. Etiam eget
-          consequat tellus. Mauris a orci ut urna sagittis porttitor. Sed
-          sollicitudin, libero sed consectetur pellentesque, lacus odio tempor
-          ex, eget varius neque velit ut odio. Duis velit eros, lacinia porta
-          dapibus et, gravida ut orci. Maecenas eleifend maximus quam, at
-          faucibus lorem convallis ac. Praesent auctor ipsum mollis diam
-          eleifend, at porttitor leo aliquet.
+          The special null value does not belong to any of the types described above.
         </p>
+        <p>It forms a separate type of its own which contains only the null value:</p>
+        <code>let age = null;</code>
+        <p>In JavaScript, null is not a “reference to a non-existing object” or a “null pointer” like in some other languages.</p>
+        <p>It’s just a special value which represents “nothing”, “empty” or “value unknown”.</p>
+        <p>The code above states that age is unknown.</p><br>
+        <code>typeof null // "object"  (2)</code>
+        <p>The result of typeof null is "object". That’s an officially recognized error in typeof behavior, coming from the early days of JavaScript and kept for compatibility. Definitely, null is not an object. It is a special value with a separate type of its own.</p><br>
+        <hr>
+        <div class="info">
+          <p><em>For more info,visit below sites:</em></p>
+          <a href="https://developer.mozilla.org/en-US/">MDN Docs</a><br>
+          <a href="https://javascript.info/">JavaScript Tutorial</a>
+
+        </div>
+
       </section>
+
     </main>
     <footer>
       <a href="https://facebook.com" target="_blank"

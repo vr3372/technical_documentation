@@ -17,7 +17,7 @@
   font-size: 2rem;
 }
 .header-name {
-  color: #ec823a;
+  color: #ff570c;
 }
 .nav-link {
   text-decoration: none;
@@ -28,18 +28,55 @@
 }
 
 .nav-link:hover {
-  color: #ec823a;
+  color: #ff570c;
 }
 
 /* main section */
 .main-section {
-  padding: 0 30px;
+  padding: 10px 10px;
+  margin: 0 20px;
 }
 .main-section p {
   font-size: 1.1rem;
+  padding: 10px 0;
 }
 .main-section h2 {
   text-align: center;
+  margin-top: 10px;
+  color: #706c61;
+}
+.ulheading {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.list {
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+#string,
+#numbers,
+#boolean,
+#undefined {
+  padding-top: 80px;
+}
+
+#null {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.info {
+  font-size: 0.9rem;
+}
+.info a {
+  text-decoration: none;
+  color: #ff570c;
+  font-weight: bold;
+}
+.info a:hover {
+  background-color: #333333;
+  color: #fff;
 }
 
 /* footer */
@@ -55,5 +92,9 @@ footer {
 .fab {
   color: skyblue;
   padding: 0 10px;
+}
+.line {
+  width: 30%;
+  margin: 0 auto;
 }
 /* colours used- 3c4245 for navbar, e5edc4 for main section */
