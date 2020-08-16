@@ -98,3 +98,45 @@ footer {
   margin: 0 auto;
 }
 /* colours used- 3c4245 for navbar, e5edc4 for main section */
+/* media queries */
+@media screen and (max-width: 376px) and (orientation: portrait) {
+  #navbar h1 {
+    color: #fff;
+    font-family: monospace;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #navbar {
+    padding: 10px 0 10px;
+  }
+  .nav-link {
+    padding: 0 3px;
+    font-size: 0.6rem;
+  }
+  .main-section {
+    padding: 10px 10px;
+    margin: 0 5px;
+  }
+  .main-section p {
+    padding: 10px 0;
+  }
+  .main-section h2 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  .navlink {
+    text-align: center;
+  }
+  .ulheading,
+  h4,
+  .list,
+  .main-section p {
+    font-size: 0.8rem;
+  }
+  footer {
+    padding-top: 5px;
+  }
+}
