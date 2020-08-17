@@ -12,6 +12,7 @@
   float: left;
   width: 15%;
   text-align: center;
+  z-index: 1;
 }
 
 #navbar h1 {
